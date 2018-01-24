@@ -2,7 +2,7 @@ package hu.helixlab.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-
+//Entity maga az user
 @Entity
 @Table(name = "user_jpa",schema = "public")
 public class User implements Serializable{
