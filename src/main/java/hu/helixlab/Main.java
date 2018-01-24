@@ -1,6 +1,6 @@
 package hu.helixlab;
 
-import hu.helixlab.model.User;
+import hu.helixlab.domain.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -26,6 +26,7 @@ public class Main {
 
 			// Create xy object
 			User u = new User();
+			u.setEmail("aaa@aaa.com");
 
 			// Save the xy object
 			manager.persist(u);
