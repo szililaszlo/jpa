@@ -6,7 +6,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "user_jpa",schema = "public")
 public class User implements Serializable{
-    @Id
+    @Id //ő lesz a primary key
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
