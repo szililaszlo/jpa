@@ -1,5 +1,6 @@
 package hu.helixlab;
 
+import hu.helixlab.domain.Contact;
 import hu.helixlab.domain.Note;
 import hu.helixlab.domain.User;
 import hu.helixlab.service.NoteService;

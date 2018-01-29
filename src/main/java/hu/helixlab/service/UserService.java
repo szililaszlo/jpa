@@ -1,5 +1,6 @@
 package hu.helixlab.service;
 
+import hu.helixlab.domain.Contact;
 import hu.helixlab.domain.User;
 import javax.persistence.*;
 import java.util.List;
@@ -20,6 +21,12 @@ public class UserService {
             transaction = manager.getTransaction();
             // Begin the transaction
             transaction.begin();
+
+            //ideiglenesen került id, nem kell ide egyébként
+            Contact c = new Contact();
+            c.setContactDescription("contact: ");
+            user.addContact(c);
+            manager.persist(c);
 
             // Save the xy object
             manager.persist(user);
